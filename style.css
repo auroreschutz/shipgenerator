@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lexend+Exa:wght@100;300&display=swap');
+
+*:focus {
+    outline: none;
+}
+
+* {
+    color: #6E95B8;
+}
+
+body {
+    font-family: 'Lexend Exa', sans-serif;
+    background: linear-gradient(#A8D1F6, #E1BEE1);
+    overflow: hidden;
+}
+
+main {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: float 1s ease-in-out;
+    background-image: url(heartbg.png);
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(232, 241, 249, 0.8);
+    padding: 50px;
+    width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: float 2s ease-in-out;
+    margin-top: -100px;
+}
+
+.pagetitle,
+.pagetitle a {
+    text-decoration: none;
+    color: #ffffffda;
+    font-size: 90%;
+}
+
+.pagetitle a:hover {
+    text-shadow: 0 0 5px #ffffff;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+}
+
+input {
+    padding: 8px;
+    margin: 5px 0;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    color: #6E95B8;
+    background: #ffffffa8;
+}
+
+::placeholder {
+    color: #554b537c;
+}
+
+button {
+    margin: 10px;
+    padding: 5px 15px;
+    background-color: #E1BEE1;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+    font-size: 100%;
+}
+
+button:hover {
+    background-color: #d3acd3;
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+#result {
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: #b66eb8;
+}
+
+#smallinfo {
+    font-size: 12px;
+}
+
+p:not(.pagetitle, .shipmeme p) {
+    font-size: 2em;
+}
+
+@media (max-width: 500px) {
+
+    body {
+        overflow: auto;
+    }
+
+    .container {
+        width: auto;
+        margin-top: 0px;
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 110%;
+    }
+
+}
+
+
+@keyframes float {
+    0% {
+        transform: translatey(-30px);
+    }
+
+    100% {
+        transform: translatey(0px);
+    }
+}

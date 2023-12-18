@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Auraenity">
+  <meta name="description" content="Ship Name Generator">
+  <meta property="og:title" content="Ship Name Generator">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://auraenity.fr/shipname">
+  <meta property="og:image" content="favicon.png">
+  <link rel="icon" type="image/webp" href="favicon.png" />
+    <link rel="stylesheet" href="style.css">
+    <title>Ship Name Generator</title>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+
+            <!-- Icon by lordicon -->
+            <lord-icon src="https://cdn.lordicon.com/jjoolpwc.json" trigger="loop" delay="4000" stroke="bold"
+                state="morph-two-hearts" colors="primary:#6E95B8,secondary:#E1BEE1" style="width:100px;height:100px">
+            </lord-icon>
+
+            <h1>Ship Generator</h1>
+            <label for="name1">Name 1:</label>
+            <input type="text" id="name1" placeholder="Name 1">
+
+            <label for="name2">Name 2:</label>
+            <input type="text" id="name2" placeholder="Name 2">
+
+            <button onclick="generateName()">Generate</button><button onclick="clearFields()">Clear</button>
+
+            <p class="result">♡ <span id="result">♡</span> ♡ </p>
+
+            <div class="shipmeme">
+                <p id="smallinfo"><small>(There's more than one result ! Click again !)</small></p>
+                <p>Now that you have your ship name, you can try the ship meme !</p>
+                <button onclick=" window.open('../shipmeme','_blank')">Ship Meme Creator</button>
+            </div>
+        </div>
+
+        <p class="pagetitle">SHIP GENERATOR ❤︎ by <a href="../" class="colored-text">AURAENITY</a></p>
+    </main>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
